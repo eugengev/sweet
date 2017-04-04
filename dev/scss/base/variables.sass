@@ -1,0 +1,40 @@
+=borrad($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+=block-center
+	position: absolute
+	left: 50%
+	top: 50%
+	-moz-transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	-o-transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%)
+
+=block-left
+	position: absolute
+	left: 50%
+	-moz-transform: translate(-50%, 0)
+	-ms-transform: translate(-50%, 0)
+	-webkit-transform: translate(-50%, 0)
+	-o-transform: translate(-50%, 0)
+	transform: translate(-50%, 0)	
+
+=block-top
+	position: absolute
+	top: 50%
+	-moz-transform: translate(0, -50%)
+	-ms-transform: translate(0, -50%)
+	-webkit-transform: translate(0, -50%)
+	-o-transform: translate(0, -50%)
+	transform: translate(0, -50%)
+
+=trans($trans)
+	-moz-transform: $trans
+	-ms-transform: $trans
+	-webkit-transform: $trans
+	-o-transform: $trans
+	transform: $trans

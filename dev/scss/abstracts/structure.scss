@@ -1,0 +1,113 @@
+// $widthContent: 960px;
+$widthPageMax: none;
+$widthPageMin: 0;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+    display: block;
+}
+
+body {
+    font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+    width: 100%;
+}
+
+img {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+div {
+    margin: 0 auto;
+}
+
+a,
+a:visited {
+    color: blue;
+    outline: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    vertical-align: middle;
+}
+
+
+/* UTIL */
+
+.clr {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font: 0px/0px;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.tcent {
+    text-align: center;
+}
+
+.tleft {
+    text-align: left;
+}
+
+.tright {
+    text-align: right;
+}
+
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+}
+
+
+/* Main */
+
+.main {
+    position: relative;
+    min-width: 200px;
+    min-height: 100%;
+    @media (max-width: 480px) {
+        overflow: hidden;
+    }
+}

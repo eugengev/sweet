@@ -1,0 +1,121 @@
+body
+	font-family: 'PT Sans', sans-serif
+html
+	font-size: 22px
+	@media (max-width: 1600px)
+		font-size: 20px
+	@media (max-width: 1439px)
+		font-size: 18px
+	@media (max-width: 1200px)
+		font-size: 16px
+	@media (max-width: 1023px)
+		font-size: 14px
+
+.header 
+	background: #010000
+	min-height: 143px
+	@media (max-width: 1439px)
+		min-height: 100px
+	@media (max-width: 767px)
+		min-height: 10px
+	&.fixed
+		position: fixed
+		left: 0
+		right: 0
+		top: 0
+		z-index: 5000
+	.logotip 
+		padding-top: 25px
+		float: left
+		@media (max-width: 1439px)
+			padding-top: 15px	
+			margin-left: 10px
+		@media (max-width: 767px)
+			padding-top: 10px
+			padding-bottom: 20px
+			float: left
+			text-align: center
+			width: 50%
+	.navbar-header
+		position: relative
+	.navbar-toggle
+		background: #fff
+		margin: 0
+		@media (max-width: 767px)
+			position: absolute
+			top: 50%
+			right: 10px
+			@include trans(translate(0, -50%))
+		.sr-only
+			display: none
+		.icon-bar
+			background: #000
+	.navbar-collapse
+		float: right
+		padding-top: 85px
+		@media (max-width: 1439px)
+			padding-top: 71px
+		@media (max-width: 767px)
+			padding-top: 10px
+			float: none
+		ul
+			display: block
+			@media (max-width: 767px)
+				text-align: center
+			li
+				float: left
+				@media (max-width: 767px)
+					float: none
+					display: inline-block
+				@media (max-width: 767px)
+					padding-bottom: 20px
+					float: none
+					display: block
+				a
+					font-size: 0.9545rem
+					color: #cdcccc
+					font-weight: 400
+					text-decoration: none
+					display: inline-block
+					padding-left: 38px
+					padding-right: 38px
+					padding-bottom: 40px
+					transition: all 0.5s ease-out 0.25s
+					@media (max-width: 1439px)
+						padding-left: 15px
+						padding-right: 15px	
+					@media (max-width: 767px)
+						padding-bottom: 20px
+						padding-left: 10px
+						padding-right: 10px
+						font-size: 1.5rem
+				&.active, &:hover
+					a
+						background: none
+						color: #ff2a72
+						position: relative
+						&:after
+							transition: all 0.5s ease-out 0.25s
+							position: absolute
+							content: ''
+							left: 0
+							right: 0
+							bottom: 0
+							background: #ff2a72
+							height: 6px
+				&:nth-last-child(1)
+					margin-right: -38px
+					@media (max-width: 1600px)
+						margin-right: 0
+.collapse
+	display: none
+	&.in	
+		display: block
+
+@media (min-width: 768px)
+	.navbar-collapse.collapse 
+	    display: block!important
+	    height: auto!important
+	    padding-bottom: 0
+	    overflow: visible!important
+
